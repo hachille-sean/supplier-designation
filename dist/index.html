@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 구매 컨시어지 - 업체 지정 요청</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0c4da2',
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script type="module" crossorigin src="/assets/index-LN7bDmXg.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-CTvf2WpW.css">
@@ -143,7 +154,7 @@
                                 <label class="text-[11px] font-bold text-blue-400 uppercase tracking-wider">지정 사유 (예상)</label>
                                 <div class="flex items-center justify-between border-b border-gray-100 pb-2 mt-1">
                                     <span class="font-bold text-lg text-gray-800">고객사 지정 (독점 기술 보유)</span>
-                                    <button class="text-xs text-primary font-bold hover:underline bg-blue-50 px-2 py-1 rounded transition-colors group">수정 <i class="fas fa-pen text-[10px] ml-1 group-hover:rotate-12 transition-transform"></i></button>
+                                    <button class="text-xs text-blue-700 font-bold hover:underline bg-blue-100 px-3 py-1.5 rounded transition-colors group">수정 <i class="fas fa-pen text-[10px] ml-1 group-hover:rotate-12 transition-transform"></i></button>
                                 </div>
                                 <p class="text-xs text-gray-500 mt-3 font-light bg-gray-50 p-2 rounded border border-gray-100 border-l-2 border-l-primary">
                                     반도체 라인 인프라 프로젝트 기반 추천
@@ -153,7 +164,7 @@
                         <div class="mt-6 pt-5 border-t border-gray-100 flex justify-between items-center">
                             <p class="text-xs text-gray-400 font-medium flex items-center gap-2"><i class="fas fa-info-circle"></i> 확정 시 아래 요청서 자동 업데이트</p>
                             <div class="flex items-center gap-3">
-                                <button class="px-5 py-2.5 border border-gray-200 text-gray-600 rounded-xl text-sm font-bold hover:bg-gray-50 transition-all shadow-sm">
+                                <button class="px-5 py-2.5 bg-gray-100 border border-gray-300 text-gray-800 rounded-xl text-sm font-bold hover:bg-gray-200 transition-all shadow-sm">
                                     업체 변경
                                 </button>
                                 <button class="bg-gradient-to-r from-primary to-blue-600 text-white px-6 py-2.5 rounded-xl text-sm font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
@@ -208,7 +219,7 @@
                 <section class="space-y-4 slide-in" style="animation-delay: 0.3s;">
                     <h3 class="text-lg font-bold text-gray-800 flex items-center gap-2">
                         <span class="w-7 h-7 bg-slate-800 text-white rounded-lg flex items-center justify-center text-sm shadow-sm">3</span>
-                        지정업체 요청서 Draft (최종 검토)
+                        업체지정 요청서 Draft (최종 검토)
                     </h3>
                     <div class="bg-white rounded-2xl p-10 relative border border-gray-200 shadow-sm draft-paper overflow-hidden">
                         <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
@@ -217,7 +228,7 @@
 
                         <div class="relative space-y-10 z-10 w-[800px] mx-auto">
                             <div class="text-center">
-                                <h2 class="text-4xl font-black tracking-[0.4em] border-b-4 border-gray-900 inline-block pb-2 px-4 shadow-sm">지정업체요청서</h2>
+                                <h2 class="text-4xl font-black tracking-[0.4em] border-b-4 border-gray-900 inline-block pb-2 px-4 shadow-sm">업체지정요청서</h2>
                             </div>
 
                             <table class="w-full border-collapse border-y-[3px] border-x-0 border-gray-900 text-sm">
@@ -290,10 +301,10 @@
     <!-- Bottom Action Bar -->
     <footer class="h-20 bg-white/90 backdrop-blur-md border-t border-gray-100 flex items-center justify-between px-10 sticky bottom-0 z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
         <div class="flex items-center gap-4">
-            <button class="px-6 py-2.5 bg-white border border-gray-200 text-gray-700 font-bold rounded-xl text-sm hover:bg-gray-50 hover:border-gray-300 shadow-sm transition-all focus:ring-2 focus:ring-gray-200 flex items-center gap-2 group">
-                <i class="fas fa-save text-gray-400 group-hover:text-gray-600 transition-colors"></i> 임시 저장
+            <button class="px-6 py-2.5 bg-white border border-gray-300 text-gray-800 font-bold rounded-xl text-sm hover:bg-gray-100 shadow-sm transition-all focus:ring-2 focus:ring-gray-200 flex items-center gap-2 group">
+                <i class="fas fa-save text-gray-500 group-hover:text-gray-700 transition-colors"></i> 임시 저장
             </button>
-            <button class="px-6 py-2.5 text-gray-500 font-bold rounded-xl text-sm hover:bg-red-50 hover:text-red-600 transition-all">
+            <button class="px-6 py-2.5 bg-gray-100 border border-gray-200 text-gray-700 font-bold rounded-xl text-sm hover:bg-red-50 hover:text-red-700 hover:border-red-200 transition-all">
                 취소
             </button>
         </div>
